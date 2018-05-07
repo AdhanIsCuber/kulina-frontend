@@ -1,0 +1,24 @@
+{
+  "name": "kulina-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdhanIsCuber/kulina-frontend.git"
+  },
+  "author": "Wirya Ramadhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdhanIsCuber/kulina-frontend/issues"
+  },
+  "homepage": "https://github.com/AdhanIsCuber/kulina-frontend#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
