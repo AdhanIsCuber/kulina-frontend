@@ -155,7 +155,7 @@ hr {
   .social-media {
     display: none; } }
 
-@media (min-width: 321px) and (max-width: 1400px) {
+@media (min-width: 321px) and (max-width: 1440px) {
   .kulina-navbar {
     display: flex;
     justify-content: space-between; }
