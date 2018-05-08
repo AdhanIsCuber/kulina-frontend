@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="./styles/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="navbar kulina-navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img src="/images/logo.svg" alt="kulina" width="112" height="28">
+          <img src="./images/logo.svg" alt="kulina" width="112" height="28">
         </a>
         <a role="button" class="navbar-burger" data-target="kulinaMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -26,8 +27,8 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu" id="kulinaMenu">
-        <div class="navbar-end">
+      <div class="navbar-menu kulina-menu" id="kulinaMenu">
+        <div class="navbar-end kulina-menu__left">
           <a class="navbar-item kulina-navbar--item">
             About Us
           </a>
@@ -40,15 +41,23 @@
         </div>
       </div>
     </nav>
+    <div class="header--wrapper">
+      <h1 class="header__title">Join an Impactful Company</h1>
+    </div>
+    <div class="header--scroll">
+      <a href="#article" class="header__btn">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
   </header>
-  <section>
-    <div class="container">
-      <div class="columns">
-        <div class="column is-one-third">
-          <h3>What We Do</h3>
+  <section id="article">
+    <div class="container kulina-container">
+      <div class="columns is-multiline kulina-article">
+        <div class="column is-one-third kulina-article--section">
+          <h3 class="kulina-article__title">What We Do</h3>
         </div>
         <div class="column">
-          <p>Kulina's mission is to "serve the best meal with an outstanding customer experience at the lowest possible proce
+          <p class="kulina-article__content">Kulina's mission is to "serve the best meal with an outstanding customer experience at the lowest possible proce
             every single day". We want to be customer's default meal option by providing quality product with on-time delivery.
             We can help customers save time and money for each meal they get from us, so they can better spend it on other
             things that metter.
@@ -62,11 +71,11 @@
           </p>
         </div>
       </div>
-      <div class="columns">
+      <div class="columns is-multiline">
         <div class="column is-one-third">
-          <h3>What We Do</h3>
+          <h3 class="kulina-article__title">Explore Opportunities</h3>
         </div>
-        <div class="column">
+        <div class="column kulina-article__jobs">
           <div class="card is-space-between is-vert-center">
             <div class="career">
               <p class="career__title">Frontend Developer</p>
@@ -140,37 +149,37 @@
         </div>
       </div>
       <hr>
-      <div class="is-space-between">
+      <div class="kulina-footer">
         <p>Made with
           <span>
-            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart icon-love"></i>
           </span> from Indonesia. &copy; kulina,2018. All rights reserved</p>
         <div class="social-media level-right">
           <p>follow kami</p>
           <ul>
             <li>
               <a href="#">
-                <i class="fa fa-facebook-square"></i>
+                <i class="fab fa-facebook-square"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-twitter-square"></i>
+                <i class="fab fa-twitter-square"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-linkedin-square"></i>
+                <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-instagram"></i>
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-line"></i>
+                <i class="fab fa-line"></i>
               </a>
             </li>
           </ul>

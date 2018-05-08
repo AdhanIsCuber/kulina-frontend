@@ -1,23 +1,20 @@
 html,
 body {
   padding: 0;
-  margin: 0; }
-
-header {
-  min-height: 100vh;
-  background: linear-gradient(#ff4057bb, #ff826022), url("/images/bg-working-unsplash.jpg");
-  background-size: cover;
-  background-position: center center; }
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
 
 a {
   color: #fff; }
 
+p {
+  color: #888; }
+
+section {
+  padding: 2rem 0; }
+
 #kulinaMenu {
   background: transparent; }
-
-.is-space-between {
-  display: flex;
-  justify-content: space-between; }
 
 .kulina-navbar {
   background: transparent;
@@ -31,8 +28,55 @@ a {
     .kulina-navbar--item.active {
       font-weight: 600; }
 
-section {
-  padding: 2rem 0; }
+.kulina-container {
+  max-width: 980px;
+  width: 980px; }
+
+.is-space-between {
+  display: flex;
+  justify-content: space-between; }
+
+.header {
+  height: 100vh;
+  background: linear-gradient(#ff4057bb, #ff826022), url("/images/bg-working-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 5rem; }
+  .header--wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__title {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center; }
+  .header--scroll {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem; }
+  .header__btn {
+    border-radius: 50px;
+    background-color: #fff;
+    color: #f9423a;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.kulina-article {
+  padding-bottom: 5rem; }
+  .kulina-article__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #373d3f; }
+  .kulina-article__content {
+    color: #758285; }
 
 hr {
   height: 1px;
@@ -60,3 +104,57 @@ hr {
   padding: 20px 40px;
   border: none;
   color: #fff; }
+
+.kulina-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px; }
+  .kulina-footer .icon-love {
+    color: #f9423a; }
+
+.social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.social-media ul > li {
+  padding: .5rem; }
+
+.social-media a {
+  color: #758285;
+  font-size: 26px; }
+
+@media (max-width: 320px) {
+  .navbar-burger {
+    display: block; }
+  .card {
+    max-width: 80%; }
+  .career__title {
+    font-size: 14px; }
+  .career__info {
+    font-size: 10px; }
+  .career__btn {
+    padding: 10px 20px; }
+  .kulina-article {
+    padding-bottom: 5rem; }
+    .kulina-article__title {
+      text-align: center; }
+    .kulina-article__jobs {
+      padding: 1rem; }
+  .kulina-menu__left {
+    position: absolute;
+    width: 100%; } }
+
+@media (min-width: 321px) and (max-width: 1400px) {
+  .kulina-navbar {
+    display: flex;
+    justify-content: space-between; }
+  .navbar-burger {
+    display: none; }
+  .navbar-menu {
+    display: block; }
+  .kulina-menu {
+    box-shadow: none; }
+    .kulina-menu__left {
+      display: flex; } }
