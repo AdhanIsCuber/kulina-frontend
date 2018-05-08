@@ -53,10 +53,10 @@
   <section id="article">
     <div class="container kulina-container">
       <div class="columns is-multiline kulina-article">
-        <div class="column is-one-third kulina-article--section">
+        <div class="column kulina-article__title--wrapper">
           <h3 class="kulina-article__title">What We Do</h3>
         </div>
-        <div class="column">
+        <div class="column kulina-article__content--wrapper">
           <p class="kulina-article__content">Kulina's mission is to "serve the best meal with an outstanding customer experience at the lowest possible proce
             every single day". We want to be customer's default meal option by providing quality product with on-time delivery.
             We can help customers save time and money for each meal they get from us, so they can better spend it on other
@@ -71,11 +71,11 @@
           </p>
         </div>
       </div>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
+      <div class="columns is-multiline kulina-article">
+        <div class="column kulina-article__title--wrapper">
           <h3 class="kulina-article__title">Explore Opportunities</h3>
         </div>
-        <div class="column kulina-article__jobs">
+        <div class="column kulina-article__jobs--wrapper">
           <div class="card is-space-between is-vert-center">
             <div class="career">
               <p class="career__title">Frontend Developer</p>
@@ -192,29 +192,17 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-
-      // Get all "navbar-burger" elements
       var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
       if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
         $navbarBurgers.forEach(function ($el) {
           $el.addEventListener('click', function () {
-
-            // Get the target from the "data-target" attribute
             var target = $el.dataset.target;
             var $target = document.getElementById(target);
-
-            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
             $el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
-
           });
         });
       }
-
     });
   </script>
 </body>

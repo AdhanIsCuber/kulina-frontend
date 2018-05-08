@@ -8,10 +8,14 @@ a {
   color: #fff; }
 
 p {
-  color: #888; }
+  color: #758285; }
 
 section {
   padding: 2rem 0; }
+
+hr {
+  height: 1px;
+  background-color: #373d3f; }
 
 #kulinaMenu {
   background: transparent; }
@@ -29,8 +33,7 @@ section {
       font-weight: 600; }
 
 .kulina-container {
-  max-width: 980px;
-  width: 980px; }
+  max-width: 1000px; }
 
 .is-space-between {
   display: flex;
@@ -62,7 +65,7 @@ section {
   .header__btn {
     border-radius: 50px;
     background-color: #fff;
-    color: #f9423a;
+    color: #ff4057bb;
     height: 50px;
     width: 50px;
     display: flex;
@@ -78,10 +81,6 @@ section {
   .kulina-article__content {
     color: #758285; }
 
-hr {
-  height: 1px;
-  background-color: #eee; }
-
 .card {
   background: #fff;
   box-shadow: 0 0 20px 0 rgba(43, 43, 43, 0.24);
@@ -92,11 +91,11 @@ hr {
 .career__title {
   font-size: 16px;
   font-weight: 900;
-  color: #000; }
+  color: #373d3f; }
 
 .career__info {
   font-size: 12px;
-  color: #888;
+  color: #758285;
   margin-bottom: 0; }
 
 .career__btn {
@@ -128,8 +127,6 @@ hr {
 @media (max-width: 320px) {
   .navbar-burger {
     display: block; }
-  .card {
-    max-width: 80%; }
   .career__title {
     font-size: 14px; }
   .career__info {
@@ -137,14 +134,26 @@ hr {
   .career__btn {
     padding: 10px 20px; }
   .kulina-article {
+    padding: 1rem;
     padding-bottom: 5rem; }
     .kulina-article__title {
       text-align: center; }
+      .kulina-article__title--wrapper {
+        width: 100%; }
+    .kulina-article__content--wrapper {
+      width: 100%; }
     .kulina-article__jobs {
       padding: 1rem; }
+      .kulina-article__jobs--wrapper {
+        width: 100%; }
   .kulina-menu__left {
     position: absolute;
-    width: 100%; } }
+    width: 100%; }
+  .kulina-footer p {
+    padding: 0 1rem;
+    text-align: center; }
+  .social-media {
+    display: none; } }
 
 @media (min-width: 321px) and (max-width: 1400px) {
   .kulina-navbar {
@@ -157,4 +166,20 @@ hr {
   .kulina-menu {
     box-shadow: none; }
     .kulina-menu__left {
-      display: flex; } }
+      display: flex; }
+  .kulina-article {
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 5rem; }
+    .kulina-article__title {
+      text-align: left; }
+      .kulina-article__title--wrapper {
+        flex: none;
+        width: 30%; }
+    .kulina-article__content--wrapper {
+      flex: none;
+      width: 70%; }
+    .kulina-article__jobs--wrapper {
+      flex: none;
+      width: 70%; } }

@@ -1,7 +1,11 @@
 $color-white: #fff;
+$color-black: #000;
 $color-love: #f9423a;
+$color-orange: #fd7314;
 $color-title: #373d3f;
 $color-content: #758285;
+$color-gradient-1: #ff4057bb;
+$color-gradient-2: #ff826022;
 html,
 body {
   padding: 0;
@@ -10,15 +14,20 @@ body {
 }
 
 a {
-  color: #fff;
+  color: $color-white;
 }
 
 p {
-  color: #888;
+  color: $color-content;
 }
 
 section {
   padding: 2rem 0;
+}
+
+hr {
+  height: 1px;
+  background-color: $color-title;
 }
 
 #kulinaMenu {
@@ -30,10 +39,10 @@ section {
   padding: 1rem 0;
   &--item {
     text-align: center;
-    color: #fff;
+    color: $color-white;
     &:hover {
       background-color: #ffffff11 !important;
-      color: #fff !important;
+      color: $color-white !important;
     }
     &.active {
       font-weight: 600;
@@ -42,8 +51,7 @@ section {
 }
 
 .kulina-container {
-  max-width: 980px;
-  width: 980px;
+  max-width: 1000px;
 }
 
 .is-space-between {
@@ -53,7 +61,7 @@ section {
 
 .header {
   height: 100vh;
-  background: linear-gradient(#ff4057bb, #ff826022), url('/images/bg-working-unsplash.jpg');
+  background: linear-gradient($color-gradient-1, $color-gradient-2), url('/images/bg-working-unsplash.jpg');
   background-size: cover;
   background-position: center center;
   margin-bottom: 5rem;
@@ -79,8 +87,8 @@ section {
   }
   &__btn {
     border-radius: 50px;
-    background-color: #fff;
-    color: #f9423a;
+    background-color: $color-white;
+    color: $color-gradient-1;
     height: 50px;
     width: 50px;
     display: flex;
@@ -101,13 +109,8 @@ section {
   }
 }
 
-hr {
-  height: 1px;
-  background-color: #eee;
-}
-
 .card {
-  background: #fff;
+  background: $color-white;
   box-shadow: 0 0 20px 0 rgba(43, 43, 43, .24);
   padding: 24px;
   border-radius: 8px;
@@ -118,18 +121,18 @@ hr {
   &__title {
     font-size: 16px;
     font-weight: 900;
-    color: #000;
+    color: $color-title;
   }
   &__info {
     font-size: 12px;
-    color: #888;
+    color: $color-content;
     margin-bottom: 0;
   }
   &__btn {
-    background-color: #fd7314;
+    background-color: $color-orange;
     padding: 20px 40px;
     border: none;
-    color: #fff;
+    color: $color-white;
   }
 }
 
@@ -158,13 +161,9 @@ hr {
   }
 }
 
-// Extra small devices (portrait phones, less than 576px)
 @media (max-width: 320px) {
   .navbar-burger {
     display: block;
-  }
-  .card {
-    max-width: 80%;
   }
   .career {
     &__title {
@@ -178,12 +177,24 @@ hr {
     }
   }
   .kulina-article {
+    padding: 1rem;
     padding-bottom: 5rem;
     &__title {
       text-align: center;
+      &--wrapper {
+        width: 100%;
+      }
+    }
+    &__content {
+      &--wrapper {
+        width: 100%;
+      }
     }
     &__jobs {
       padding: 1rem;
+      &--wrapper {
+        width: 100%;
+      }
     }
   }
   .kulina-menu {
@@ -192,9 +203,15 @@ hr {
       width: 100%;
     }
   }
+  .kulina-footer p {
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .social-media {
+    display: none;
+  }
 }
 
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 321px) and (max-width: 1400px) {
   .kulina-navbar {
     display: flex;
@@ -210,6 +227,31 @@ hr {
     box-shadow: none;
     &__left {
       display: flex;
+    }
+  }
+  .kulina-article {
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    &__title {
+      text-align: left;
+      &--wrapper {
+        flex: none;
+        width: 30%;
+      }
+    }
+    &__content {
+      &--wrapper {
+        flex: none;
+        width: 70%;
+      }
+    }
+    &__jobs {
+      &--wrapper {
+        flex: none;
+        width: 70%;
+      }
     }
   }
 }
